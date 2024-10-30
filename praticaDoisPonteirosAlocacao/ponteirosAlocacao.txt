@@ -1,0 +1,41 @@
+Aqui estão instruções diretas para cada problema da **Prática II - Ponteiro, Alocação dinâmica**:
+
+### Problema 1: Troca de Valores Usando Ponteiros
+1. Leia dois valores inteiros X e Y.
+2. Utilize ponteiros para trocar os valores de X e Y.
+3. Exiba os valores antes e depois da troca em duas linhas.
+   - Exemplo de saída:  
+     ```
+     5 10
+     10 5
+     ```
+
+### Problema 2: Soma Cruzada entre Sequências
+1. Leia um valor N (tamanho das sequências) e duas sequências de N inteiros.
+2. Realize a soma cruzada: o primeiro elemento da primeira sequência com o último da segunda, o segundo com o penúltimo, e assim por diante.
+3. Exiba a lista de somas resultante, separada por espaços.
+   - Exemplo de saída:  
+     ```
+     6 6 6 6 6
+     ```
+
+### Problema 3: Soma de Vetores e Geração de Matriz
+1. Leia um valor N (tamanho dos vetores) e os elementos de dois vetores de tamanho N.
+2. Leia um valor X (quantidade de colunas para a matriz).
+3. Crie uma matriz onde cada elemento é a soma dos valores correspondentes dos dois vetores, e exiba conforme o número de colunas especificado.
+   - Exemplo de saída:  
+     ```
+     6 8
+     10 12
+     ```
+
+### Problema 4: Busca de Valores em Sequência
+1. Leia um valor N (tamanho da sequência) e uma sequência de N inteiros.
+2. Leia um valor B (número de buscas) e os valores que deseja buscar na sequência.
+3. Para cada valor buscado, exiba a posição da primeira ocorrência (iniciando de 1). Se o valor não estiver presente, exiba "NAO".
+   - Exemplo de saída:  
+     ```
+     3
+     NAO
+     2
+     ```

@@ -1,0 +1,72 @@
+Aqui estão as direções e instruções objetivas para a Prática VIII - Recursividade:
+
+### Problema 1: Sequência de Fibonacci
+
+1. **Objetivo**:
+   - Calcular o valor da sequência de Fibonacci usando chamadas recursivas e contar o número de chamadas feitas.
+
+2. **Definição da Sequência**:
+   - A sequência é definida como:
+     - fib(0) = 0
+     - fib(1) = 1
+     - fib(n) = fib(n-1) + fib(n-2)
+
+3. **Entrada**:
+   - A primeira linha contém um inteiro N, o número de casos de teste.
+   - Cada um dos N casos de teste contém um inteiro X (1 ≤ X ≤ 39).
+
+4. **Saída**:
+   - Para cada caso de teste, exibir no formato: `fib(X) = num_calls calls = result`
+   - Onde `num_calls` é o número de chamadas recursivas e `result` é o valor da sequência.
+
+5. **Exemplo**:
+   - Entrada:
+     ```
+     2
+     4
+     5
+     ```
+   - Saída:
+     ```
+     fib(4) = 8 calls = 3
+     fib(5) = 12 calls = 5
+     ```
+
+---
+
+### Problema 2: Máquina do Amor
+
+1. **Objetivo**:
+   - Determinar se é possível encontrar uma string L válida tal que duas strings binárias S1 e S2 possam ser construídas a partir de L.
+
+2. **Definição de Amor**:
+   - A string L deve permitir que S1 e S2 sejam formadas apenas subtraindo L de S1 e S2, respectivamente, até que reste apenas L.
+
+3. **Entrada**:
+   - A primeira linha contém um inteiro positivo N (N < 10000), indicando o número de casos de teste.
+   - Seguem 2*N linhas, onde cada par de linhas contém as strings S1 e S2.
+
+4. **Saída**:
+   - Para cada par de strings, imprimir:
+     - `Pair #p: All you need is love!` se existe uma string L válida.
+     - `Pair #p: Love is not all you need!` se não existe.
+
+5. **Exemplo**:
+   - Entrada:
+     ```
+     3
+     11011
+     11000
+     11111
+     11000
+     10001
+     11010
+     ```
+   - Saída:
+     ```
+     Pair #1: All you need is love!
+     Pair #2: Love is not all you need!
+     Pair #3: Love is not all you need!
+     ```
+
+Essas são as direções para os dois problemas propostos na Prática VIII sobre recursividade.

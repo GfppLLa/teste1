@@ -1,0 +1,33 @@
+Aqui estão instruções diretas para cada exercício:
+
+### Exercício 1: Bhaskara
+1. Leia três valores de ponto flutuante: A, B e C.
+2. Implemente uma função `calcularRaizes` que:
+   - Verifique se A está entre 0.1 e 10.0 e se B e C estão entre -1000.0 e 1000.0.
+   - Se A for zero ou o discriminante (B² - 4AC) for negativo, exiba "Impossível calcular".
+   - Caso contrário, calcule as raízes reais com 5 casas decimais e exiba.
+3. Fórmula:  
+   \[
+   x_1 = \frac{-B + \sqrt{∆}}{2A}, \quad x_2 = \frac{-B - \sqrt{∆}}{2A}
+   \]  
+   onde ∆ = B² - 4AC.
+
+### Exercício 2: Ciclo Trigonométrico
+1. Leia um valor real R representando o ângulo em graus.
+2. Implemente uma função que:
+   - Calcule o número de voltas inteiras que o ângulo completa (R dividido por 360).
+   - Determine o quadrante em que o ângulo se encontra.
+3. Exiba o quadrante e o número de voltas no formato:
+   ```
+   QUADRANTE: <quadrante>
+   QUANTIDADE DE VOLTAS: <número de voltas>
+   ```
+
+### Exercício 3: Aproximação de π
+1. Leia um valor inteiro n.
+2. Implemente a função `aproxPi` que:
+   - Se n for menor que 1, exiba "Número de termos inválido. Deve ser maior ou igual a 1."
+   - Caso contrário, use a fórmula de Leibniz para calcular a aproximação de π e exiba o valor com 5 casas decimais:
+   \[
+   \pi \approx 4 \times \left(1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \cdots \right)
+   \]

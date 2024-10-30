@@ -1,0 +1,37 @@
+Aqui estão instruções diretas para a **Prática III - Tipos Abstratos de Dados**:
+
+### Problema 1: Conjunto de Intervalos
+1. **Objetivo**: Implementar um programa que permite adicionar intervalos e verificar se um ponto pertence a algum intervalo.
+2. **Menu de Opções**:
+   - `1` - Adicionar intervalo: O usuário fornece os valores `intervalo_inicio` e `intervalo_fim`.
+   - `2` - Verificar ponto: O usuário fornece um valor de ponto, e o programa verifica se ele está dentro de algum intervalo.
+   - `0` - Sair: Encerra o programa.
+3. **Entradas**:
+   - O programa aceita comandos de adicionar intervalos e verificar pontos até que a opção "0" seja escolhida.
+4. **Saídas**:
+   - Quando um intervalo é adicionado, o programa continua para a próxima entrada.
+   - Para a verificação de pontos, o programa exibe:
+     - "Dentro do intervalo [intervalo_inicio, intervalo_fim]" se o ponto estiver dentro de algum intervalo.
+     - "Fora de todos os intervalos" se o ponto não estiver em nenhum intervalo.
+5. **Exemplo de Saída**:
+   ```
+   Dentro do intervalo [1, 5]
+   Fora de todos os intervalos
+   Dentro do intervalo [10, 15]
+   ```
+
+### Problema 2: Agenda de Contatos
+1. **Objetivo**: Desenvolver uma agenda que gerencie até 100 contatos com as informações: nome, telefone e email.
+2. **Menu de Opções**:
+   - **Adicionar Contato**: O usuário pode inserir um novo contato com nome, telefone e email. Se o limite de 100 contatos for atingido, exiba uma mensagem de erro.
+   - **Visualizar Contatos**: Exiba todos os contatos cadastrados.
+   - **Buscar Contato Específico**: O usuário busca um contato pelo nome, e o programa exibe nome, telefone e email se o contato for encontrado.
+   - **Remover Contato Específico**: O usuário remove um contato pelo nome. Se o contato for encontrado, exiba uma mensagem de confirmação.
+   - **Sair**: Encerra o programa.
+3. **Entradas**:
+   - O usuário insere dados interativamente através do menu de opções.
+4. **Saídas**:
+   - Exiba informações dos contatos conforme as opções escolhidas pelo usuário.
+   - Exemplo de mensagens de saída:
+     - "Contato removido com sucesso" após remoção.
+     - "Contato não encontrado" caso o contato buscado ou removido não exista.

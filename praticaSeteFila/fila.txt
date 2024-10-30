@@ -1,0 +1,47 @@
+Aqui estão as direções e instruções objetivas para a Prática VII - Fila:
+
+### Problema: Reordenação da Fila por Notas
+
+1. **Objetivo**:
+   - Reordenar a fila dos alunos na cantina com base em suas notas de matemática e contar quantos alunos permaneceram na mesma posição após a reordenação.
+
+2. **Entrada**:
+   - A primeira linha contém um inteiro N, que representa o número de casos de teste.
+   - Para cada caso de teste:
+     - A primeira linha contém um inteiro M (1 ≤ M ≤ 1000), que indica o número de alunos.
+     - A segunda linha contém M inteiros distintos Pi (1 ≤ Pi ≤ 1000), onde Pi é a nota do i-ésimo aluno, apresentados na ordem de chegada.
+
+3. **Saída**:
+   - Para cada caso de teste, imprimir uma linha com um único inteiro que representa o número de alunos que não precisaram trocar de lugar após a reordenação.
+
+4. **Processo**:
+   - Para cada caso de teste:
+     1. Armazenar a ordem original das notas e as respectivas posições.
+     2. Criar uma lista com as notas ordenadas em ordem decrescente.
+     3. Comparar a posição original de cada aluno com sua nova posição na lista ordenada.
+     4. Contar quantos alunos mantiveram sua posição original.
+
+5. **Exemplo**:
+   - Entrada:
+     ```
+     2
+     5
+     60 70 80 90 100
+     4
+     50 60 70 80
+     ```
+   - Saída:
+     ```
+     0
+     0
+     ```
+
+### Implementação
+
+- **Passos**:
+  1. Ler o número de casos de teste.
+  2. Para cada caso, ler o número de alunos e suas notas.
+  3. Ordenar as notas e comparar com a ordem original.
+  4. Contar e imprimir o número de alunos que permaneceram na mesma posição.
+
+Com essas direções, você pode implementar a solução para o problema proposto na Prática VII sobre filas.

@@ -1,0 +1,45 @@
+Aqui estão as instruções diretas e objetivas para cada problema da Prática III - Lista Encadeada:
+
+---
+
+### **Problema 1: Concatenar duas listas encadeadas**
+1. Leia um número inteiro **n** representando o número de elementos da lista **L1**.
+2. Leia **n** inteiros para a lista **L1**.
+3. Leia um número inteiro **m** representando o número de elementos da lista **L2**.
+4. Leia **m** inteiros para a lista **L2**.
+5. Implemente a função `concatena(Lista* l1, Lista* l2)` que concatena a lista **L2** ao final de **L1**.
+6. Se **L1** for vazia, retorne **L2**. Se **L2** for vazia, retorne **L1**.
+7. Exiba a lista concatenada.
+
+---
+
+### **Problema 2: Remover todas as ocorrências de um valor na lista**
+1. Leia um número inteiro **m** representando o número de elementos da lista **L**.
+2. Leia **m** inteiros para a lista **L**.
+3. Leia um valor inteiro **n** para ser removido.
+4. Implemente a função `retira_n(Lista* l, int n)` que remove todas as ocorrências de **n** na lista **L**.
+5. Se **n** não estiver na lista, retorne a lista sem alterações.
+6. Exiba a lista resultante após a remoção.
+
+---
+
+### **Problema 3: Reordenar elementos por posição**
+1. Leia um número inteiro **N** representando o número de elementos da lista.
+2. Leia **N** inteiros para a lista.
+3. Implemente a função `reordena_lista(Lista* l)` que move os elementos das posições ímpares para o início da lista e os das posições pares para o final.
+4. Exiba a lista reordenada, com os números nas posições ímpares primeiro e os das posições pares depois.
+
+---
+
+### **Problema 4: Inserção ordenada em lista encadeada**
+1. Leia um número inteiro **N**, que indica quantos números serão inseridos na lista.
+2. Para cada número:
+   - Leia um caractere **P** ou **U** e um número inteiro.
+   - Se o caractere for **P**, insira o número antes do primeiro elemento da lista.
+   - Se o caractere for **U**, insira o número após o último elemento da lista.
+3. Exiba a lista resultante após todas as inserções.
+4. A sequência termina quando **N = 0**.
+
+---
+
+Essas são as instruções simplificadas para cada um dos problemas.

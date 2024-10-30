@@ -1,0 +1,91 @@
+Aqui estão as direções e instruções objetivas para a Prática VI - Pilha:
+
+### Problema 1: Operações de Empilhar e Desempilhar
+
+1. **Objetivo**:
+   - Implementar uma estrutura de pilha para empilhar e desempilhar valores, e após cada operação, exibir o status da pilha.
+
+2. **Regras de Manipulação**:
+   - Operação de **empilhar**: Se o primeiro caractere for 'E', empilhar o valor V (0 ≤ V ≤ 10.000) na pilha.
+   - Operação de **desempilhar**: Se o primeiro caractere for 'D', desempilhar o topo da pilha.
+   - **Exibição**: Após cada operação, mostrar o status da pilha do topo até a base. Se a pilha estiver vazia, exibir `*`.
+
+3. **Entrada**:
+   - Vários casos de teste. Cada caso começa com um valor N (0 < N < 1.000), seguido de N operações.
+   - As operações são dadas como:
+     - **E V**: Empilha o valor V.
+     - **D**: Desempilha um valor.
+   - O caso de teste termina quando N = 0.
+
+4. **Saída**:
+   - Para cada operação, exibir o estado da pilha, do topo até a base, em uma única linha, com valores separados por espaço.
+   - Se a pilha estiver vazia, exibir `*`.
+   - Entre os casos de teste, imprimir uma linha em branco.
+
+5. **Exemplo**:
+   - Entrada:
+     ```
+     5
+     E 2
+     D
+     E 1
+     E 4
+     D
+     3
+     E 2
+     E 3
+     D
+     0
+     ```
+   - Saída:
+     ```
+     2
+     *
+     1
+     4 1
+     1
+
+     2
+     3 2
+     2
+     ```
+
+---
+
+### Problema 2: Verificação de Aninhamento de Parênteses, Colchetes e Chaves
+
+1. **Objetivo**:
+   - Verificar se uma sequência de caracteres contendo parênteses, colchetes e chaves está bem-formada e aninhada corretamente.
+
+2. **Regras de Verificação**:
+   - A sequência é **bem-formada** se:
+     1. Cada par de fechamento (')', ']', '}') tem um correspondente de abertura ('(', '[', '{') que ocorre antes.
+     2. Os pares são aninhados corretamente, ou seja, um par de abertura deve ser fechado antes de abrir um novo par.
+   
+3. **Entrada**:
+   - Várias linhas, cada uma contendo uma sequência de até 1000 caracteres.
+   - A entrada termina com uma linha vazia.
+
+4. **Saída**:
+   - Para cada linha de entrada, imprimir "Sim" se a sequência estiver bem-formada, caso contrário, imprimir "Não".
+
+5. **Exemplo**:
+   - Entrada:
+     ```
+     (())
+     ((()))
+     (()())
+     ())(
+     ((())(
+     0
+     ```
+   - Saída:
+     ```
+     Sim
+     Sim
+     Sim
+     Não
+     Não
+     ```
+
+Essas são as direções para os dois problemas propostos sobre pilhas.

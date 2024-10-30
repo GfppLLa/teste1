@@ -1,0 +1,38 @@
+Aqui estão as direções e instruções objetivas para a Prática V:
+
+### Problema: Gerenciamento Dinâmico de Ranking de Consultas com Lista Duplamente Encadeada
+
+1. **Objetivo**:
+   - Implementar uma lista duplamente encadeada para armazenar expressões consultadas. A lista deve ser dinamicamente ordenada conforme o ranking de consultas, e deve remover a expressão menos acessada ao atingir a capacidade máxima.
+
+2. **Regras de Manipulação**:
+   - Ao consultar uma expressão:
+     - **Não está na lista**: Adicioná-la ao final.
+     - **Já está na lista**: Trocar de posição com o nó anterior (aumentar o ranking).
+     - **Lista cheia**: Remover a expressão menos acessada (última da lista) para liberar espaço.
+   
+3. **Entrada e Operações**:
+   - O programa deve exibir um menu com as seguintes opções:
+     1. **Consultar uma expressão**:
+        - Solicitar a expressão (máx. 80 caracteres).
+        - Consultar a expressão e ajustar seu ranking.
+        - Retornar a posição final da expressão.
+     2. **Exibir expressões em ordem crescente de ranking**.
+     3. **Exibir expressões em ordem decrescente de ranking**.
+     4. **Exibir o histórico das últimas N consultas realizadas**.
+     5. **Encerrar o programa**.
+
+4. **Saída**:
+   - Para a operação de consulta: Retornar a posição final da expressão na lista.
+   - Para as operações de exibição: Listar expressões em ordem crescente ou decrescente de ranking.
+   - Para o histórico: Exibir as últimas N consultas realizadas.
+
+5. **Inicialização**:
+   - O programa deve solicitar o tamanho máximo da lista de expressões ao usuário. 
+
+6. **Exemplo**:
+   - Consulta à expressão "iPhone 3G" resultaria em sua inserção ao final da lista.
+   - Consulta à expressão "Harry Potter" causaria troca de posição com o nó anterior, ajustando seu ranking.
+   - Consulta à expressão "Britney Spears" causaria troca com o primeiro nó, mudando o ponteiro da lista.
+
+Essas são as instruções detalhadas para seguir na implementação da prática.
