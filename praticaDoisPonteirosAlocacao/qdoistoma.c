@@ -14,12 +14,12 @@
 #include<stdio.h>
 void exibir(int** vetor, int num)
 {
-    int n=num;//de n ate 0
+    int n=num-1;//de n ate 0
     int n2=0;//de 0 ate n
-         while (n!=0)
+         while (n>=0)
         {
             //vetor[2][n2]=vetor[0][n2]+vetor[1][n];
-            printf("\n soma de: %d e %e eh igual a : %d", vetor[0][n2],vetor[1][n], vetor[2][n2]);
+            printf("\n soma de: %d e %d eh igual a : %d", vetor[0][n2],vetor[1][n], vetor[2][n2]);
             n2++;
             n--;
         }
@@ -29,9 +29,9 @@ void soma_cr(int** vetor, int num)
     //laço mais externo
     //for(int i=0; i<num; i++)
     //{
-    int n=num;//de n ate 0
+    int n=num-1;//de n ate 0
     int n2=0;//de 0 ate n
-         while (n!=0)
+         while (n>0)
         {
             vetor[2][n2]=vetor[0][n2]+vetor[1][n];
             n2++;
@@ -43,7 +43,7 @@ void soma_cr(int** vetor, int num)
 void preencher(int**vetor, int num)
 {
     printf("\n***preencher vetor***");
-    for(int i=0; i<=1; i++)
+    for(int i=0; i<2; i++)
     {
         printf("\ninserir elementos da %d linha", i);
         for(int j=0; j<num; j++)
@@ -53,6 +53,7 @@ void preencher(int**vetor, int num)
         }
     }
 }
+
 int main(int argc, char*argv[])
 {
     int num=0;
@@ -65,20 +66,20 @@ int main(int argc, char*argv[])
         printf("erro de alocacao");
         exit(1);
     }
-    for(int i=0; i<3;i++)
+    for(int i=0; i<num;i++)
     {
      vetor[i]=(int*)calloc(num,sizeof(int));
         if(vetor[i]==NULL)
         {
             printf("erro de alocacao");
-            for(int j=0; j<i; j++)
+            for(int j=0; j<i; j++)//tava i ao inves de num
             {
                 free(vetor[j]);
             }
             exit(1);
         }
     }
-    preencher(&vetor, num);
+    preencher(vetor, num);
     soma_cr(vetor, num);
     exibir(vetor, num);
 
