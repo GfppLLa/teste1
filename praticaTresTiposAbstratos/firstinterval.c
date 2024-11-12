@@ -67,7 +67,7 @@ void insertInEnd(node**head, int start, int end)
         }
         (*atNow).next=newNode;//in the end the address pointed at the last node receives the newNode location
 }
-node* findNode(node**head, int toTest)
+node* findNode(node**head, int *toTest)
 {
 //receive a number, compare it in each list element
     node* runAux=*head;
@@ -124,7 +124,7 @@ void menuLoop(int *returnSelectedOpt)
         menuLoop(returnSelectedOpt);
     }
 }
-void getNumberInterval(node**listOne)
+void setNumberInterval(node**listOne)
 {
     system("clear");
     printf("\ninsert the first number of the interval:");
@@ -171,25 +171,48 @@ void getNumberInterval(node**listOne)
         }
         insertInBegin(listOne, numberOne, numberTwo);
 }
-void operation()
+node* getFindNode(node**head)
+{
+    int *numberToFind;
+    numberToFind=(int*)calloc(1, sizeof(int));
+    while(1){
+        system("clear");
+        printf("\ninsert number to be found: ");
+        scanf("%d",numberToFind);
+        if(*numberToFind>=1 &&*numberToFind<=100)
+        {
+            printf("****remember to put only 1 to 100*****");
+            getch();
+            break;
+        }
+    }
+    return (findNode(&head, numberToFind));
+}
+void operation(int toVerify)
 {   
     int *returnSelectedOpt;
     node* listOne;
     returnSelectedOpt=(int*)calloc(1, sizeof(int));
-    switch (*returnSelectedOpt)
-    {
-    case '1':
-        getNumberInterval(&listOne);
-        break;
-    
-    default:
-        break;
+    while(1){//while loop runs 
+        menuLoop(returnSelectedOpt);
+        switch (*returnSelectedOpt)
+        {
+        case '1':
+            setNumberInterval(&listOne);
+            break;
+        case '2':
+            getFindNode(&listOne);//function to get the number e run it through all the lists
+            break;
+        case '3':
+            freeNodes(&listOne);
+            return;
+            break;
+        }
     }
-
 }
 int main(int argc, char*argv[])
 {
-    
+    operation;
 
 return 0;
 }
