@@ -253,5 +253,19 @@ removeNode(node**head, node*targetNode)
  * return:
  * 
  */
-void freeNode(node**head);//only receives de node and remove it
-
+void freeNode(node**head)//only receives de node and remove it
+{
+    node *auxOne=*head;
+    while ((*auxOne).next!=NULL)
+    {
+        if((*auxOne).next==NULL)
+        {
+            free(auxOne);
+        }else{
+            node*proto=auxOne;//only created to serve as aux and to be freed
+            auxOne=(*auxOne).next;
+            free(proto);
+        }
+    }
+    
+}
