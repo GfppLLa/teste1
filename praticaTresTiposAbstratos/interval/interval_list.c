@@ -49,8 +49,8 @@ node* findNode(node**head, int *toTest)
     node* runAux=*head;
     while((*runAux).next!=NULL)
     {
-        if(toTest<=(*runAux).end &&toTest >= (*runAux).start)
-        {
+        if(*toTest<=(*runAux).end &&*toTest >= (*runAux).start)
+        {   
             return runAux;
         }else{
             runAux=(*runAux).next;
