@@ -30,7 +30,7 @@ typedef struct List{
     char*phone;
     char*mail;
     char*address;
-    struct LIST*next;
+    struct List*next;
 
 } node;
 /**
@@ -59,7 +59,7 @@ node**crateNode(node**head, char**content)//only called bay the insert node
         //do other thing
         //for loop to run the 2diomensions array
         int j=0;
-        for(int i=0;i>MAX_LOOP; i++)
+        for(int i=0;i<MAX_LOOP; i++)
         {
             //second for loop to run tho
             char*toAuxLoop;
@@ -157,7 +157,7 @@ return newList;
 node**findNode(node** head, char**content, int instructor)//called in finding node != and in removing node
 {
     node* runAux=head;
-    char ;
+
     while((*runAux).next !=NULL)
     {
         switch (instructor)
